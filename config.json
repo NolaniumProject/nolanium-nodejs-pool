@@ -5,8 +5,8 @@
 	"coinUnits": 100000000,
 	"coinDecimalPlaces": 8,
 	"coinDifficultyTarget": 30,
-	"blockchainExplorer": "https://explorer.nolanium.xyz/block.html?hash={id}",
-	"transactionExplorer": "https://explorer.nolanium.xyz/transaction.html?hash={id}",
+	"blockchainExplorer": "https://explorer.nolanium.xyz/block?hash={id}",
+	"transactionExplorer": "https://explorer.nolanium.xyz/transaction?hash={id}",
 	"daemonType": "bytecoin",
 	"cnAlgorithm": "cryptonight_pico",
 	"cnVariant": 2,
@@ -105,16 +105,16 @@
 	},
 	"payments": {
 		"enabled": true,
-		"interval": 1800,
-		"maxAddresses": 50,
+		"interval": 300,
+		"maxAddresses": 15,
 		"mixin": 0,
 		"priority": 0,
-		"transferFee": 5000,
+		"transferFee": 50000,
 		"dynamicTransferFee": true,
 		"minerPayFee": true,
-		"minPayment": 1000000,
-		"maxTransactionAmount": 30000000000,
-		"denomination": 1
+		"minPayment": 100000,
+		"maxTransactionAmount": 10000000000,
+		"denomination": 1000
 	},
 	"blockUnlocker": {
 		"enabled": true,
